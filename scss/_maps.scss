@@ -1,0 +1,8 @@
+
+$mapRedes:(facebook:red,instragram:pink,youtube:white);
+
+@each $red, $color in $mapRedes {
+    .btn--#{$red} {
+        color: $color;
+    }
+}

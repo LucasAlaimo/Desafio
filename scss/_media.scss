@@ -1,0 +1,73 @@
+@import "./variables";
+
+@media screen and (min-width:769px) {
+    .header_nav{
+        background-image: url("/img/logo4.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        ul{
+            list-style-type: none;
+            padding: 2rem;
+            li{
+                display: inline-block;
+                margin-top: 1rem;
+                a{
+                    text-decoration:none;
+                    text-transform: uppercase;
+                    color: black;
+                    background-color: $primary;
+                    padding: 20px;
+                    &:hover{
+                            background: $secondary;
+                    }
+                }
+             }
+         }
+    }
+    .footer{
+        display: flex;
+        padding: 1 rem;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .footer_seguinos{
+        list-style: none;
+        text-align: center;
+        border-right: solid $info;
+        padding-right: 100px;
+        h4{
+            display: flex;
+            justify-content: center;
+            font-size: x-large;
+        }
+    
+    }
+
+    .footer_seguinos_img{
+        padding-top:0px;
+        padding-bottom:0px;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                
+            }
+        }
+    }
+    .footer_contactanos{
+        list-style: none;
+        text-align: center;
+        display: block;
+    }
+    .footer_contactanos_img li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h5{
+            font-size: large;
+        }
+    }   
+}
